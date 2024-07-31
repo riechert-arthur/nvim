@@ -14,7 +14,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 local theme = "catppuccin"
@@ -24,6 +23,7 @@ require("lazy").setup({
 		{ import = "default_v1.plugins" },
 		{ import = "default_v1.plugins.lsp" },
 		{ import = "default_v1.plugins.theme." .. theme },
+		{ import = "default_v1.core" },
 	},
 	install = { colorscheme = { "habamax" } },
 	checker = { enabled = true },
