@@ -13,10 +13,12 @@ local config = function()
 			"json",
 			"java",
 			"python",
+			"tsx",
 		},
 		sync_install = false,
 		highlight = { enable = true },
 		indent = { enable = true },
+		autopairs = { enable = true },
 	})
 end
 
