@@ -25,7 +25,7 @@ local config = function()
     }
   }
   require("lspconfig").ts_ls.setup {}
-
+  require("lspconfig").pylsp.setup {}
 end
 
 return {
